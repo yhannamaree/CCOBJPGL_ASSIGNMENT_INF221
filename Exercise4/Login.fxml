@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1e8f11;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <Label layoutX="192.0" layoutY="56.0" prefHeight="88.0" prefWidth="257.0" text="Welcome to Secret App" textAlignment="RIGHT" textFill="#ebebeb">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="168.0" text="username">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.004739336492891044" startX="0.4976303317535545" startY="0.933649289099526">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="63.0" layoutY="227.0" text="password">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.4976303317535545" startY="0.5876777251184834">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="mytextfield" layoutX="160.0" layoutY="169.0" prefHeight="25.0" prefWidth="322.0" promptText="Enter your username" />
+      <Button fx:id="mybutton" layoutX="277.0" layoutY="284.0" mnemonicParsing="false" onAction="#login" text="LogIn" />
+      <PasswordField fx:id="mypasswordfield" layoutX="160.0" layoutY="228.0" prefHeight="25.0" prefWidth="322.0" promptText="Enter your Password" />
+      <Label layoutX="170.0" layoutY="333.0" />
+      <Label fx:id="mywarninglabel" layoutX="154.0" layoutY="317.0" prefHeight="67.0" prefWidth="292.0" text="YOUR USERNAME AND PASSWORD DOESN'T MATCH" textFill="#f80202" visible="false" />
+   </children>
+</AnchorPane>
