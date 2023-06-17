@@ -2,7 +2,7 @@ package CAT;
 
 interface Persian {
 
-    String Weight = "5 kg";
+    String Weight = "4.5 kg";
     
     void meow();
 }
